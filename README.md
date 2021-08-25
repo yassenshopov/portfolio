@@ -1,1 +1,1 @@
-# Portfolio website for Yassen Shopov 🤖
+#⭐️ Portfolio website • Yassen Shopov
