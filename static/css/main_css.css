@@ -1,0 +1,205 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.header a {
+    
+    margin: 20px;
+    
+    padding: 2%;
+    text-decoration: none;
+    font-size: 18px;
+    color: #121212;
+    transition: 800ms;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.header a:hover {
+    border-bottom-color: black;
+}
+
+.header a:active {
+    border-color: black;
+}
+
+.hero {
+    margin-left: 50px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+  }
+  
+  @-webkit-keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(20px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+  }
+  
+  @-webkit-keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    }
+
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    } 
+
+.heroImg {
+
+    width: 450px;
+    height: 450px;
+    -webkit-filter: drop-shadow(10px 10px 10px rgb(0 0 0 / 0.5));
+    filter:drop-shadow(10px 10px 10px rgb(0 0 0 / 0.5));
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+
+}
+
+.hero h1 {
+    border-radius: 25px;
+    float: left;
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    top: 352px;
+    left: 250px;
+    box-shadow:10px 10px 10px rgb(0 0 0 / 0.5);
+    background-color: white;
+    font-size: 66px;
+    align-content: center;
+    width: 320px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+
+}
+
+.skills h2 {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+    border: #ffffff solid 3px;
+    background: #04030f;
+    padding: 1%;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 25px;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+.skills h2:nth-child(1) {
+    margin-top: 80px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+   /* background: red; */
+}
+
+.skills h2:nth-child(2) {
+    background: #201e36;
+    width: 90%;
+    margin-left: 140px;
+    margin-top: 80px;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+.skills h2:nth-child(3) {
+    background: #555373;
+    width: 90%;
+    margin-left: 220px;
+    margin-top: 80px;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+ 
+}
