@@ -5,17 +5,50 @@
     <title>Yassen Shopov • Portfolio Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main_css.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
     
-    <header>
+    <header class="header fadeInLeft">
+        <a href="#about"><b>ABOUT</b></a>
+        <a href="#portfolio"><b>PORTFOLIO</b></a>
+        <a href="#contact" style="margin-right: 80px;"><b>CONTACT</b></a>
     </header>
 
     <main>
-        <h1>1</h1>
+
+        <div class="hero">
+            <img class="heroImg fadeInRight" src="{{ url_for('static',filename='css/heroImg.png') }}">
+            <h1 class="fadeInRight">YASSEN SHOPOV</h1>
+            <div class="skills">
+                <h2 class="fadeInRight">ENGINEER</h2>
+                <h2 class="fadeInRight">DESIGNER</h2>
+                <h2 class="fadeInRight">CONTENT CREATOR</h2>
+            </div>
+        </div>
+
+        <div id="about">
+            <p>ABOUT ME</p>
+        </div>
+
+        <div id="portfolio">
+            <p>PORTFOLIO</p>
+        </div>
+    
+        <div id="contact"> 
+            <p>CONTACT</p>
+        </div>
+
+
+
     </main>
+
+
 
     <footer>
     </footer>
