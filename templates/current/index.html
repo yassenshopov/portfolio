@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 
@@ -32,16 +33,51 @@
             </div>
         </div>
 
-        <div id="about">
-            <p>ABOUT ME</p>
+        <div id="pause1" class="pause"></div>
+
+        <div class="about" id="about">
+            <div class="paras">
+
+            <h2>🧬 ABOUT ME</h2>
+
+            <p>I am Yassen Shopov, a 21-year-old student from Bulgaria, on my journey of personal development. Welcome to my little page on the Internet.
+
+            <p>This website showcases my different projects and interests. My career as a digital creator started in 2020, and since then I have worked with 150+ clients on their digital illustrations and character design projects. Since the start of 2021, I have taken an avid interest in blogging, with my main niche being productivity and creativity enhancement.
+                
+            <p>I have been using my skills in programming and web design to create extensions and automation that help me with work-life balance, increase my productivity, and help me monitor my personal data.</p>
+                
+            <p>My aim as a digital content creator is to help my readers and followers reach their personal goals without sacrificing their mental health.</p>
+                
+            <p>See you around! ✌️</p>
+            </div>
+
+            <img class="aboutImg fadeInRight" src="{{ url_for('static',filename='css/aboutImg.jpg') }}">
         </div>
 
-        <div id="portfolio">
-            <p>PORTFOLIO</p>
+        <div id="pause2" class="pause"></div>
+
+        <div class="portfolio" id="portfolio">
+            <h2>💠 PORTFOLIO</h2>
+            <div class="DI">
+                <div id="imgWrapper">
+                <img id="digillustration" class="digillustration" src="{{ url_for('static',filename='css/digillustration.png') }}"></img>
+                </div>
+                <h1 id="DIh1">DIGITAL ILLUSTRATION</h1>
+            </div>
         </div>
     
+        <div id="pause3" class="pause"></div>
+
         <div id="contact"> 
-            <p>CONTACT</p>
+            <h2>📣 CONTACT</h2>
+            <div class="contactSection">
+                <div class="upperContent">
+                    <h2>Shoot me an email!</h2>
+                </div>
+                <div class="lowerContent">
+                    <img class="contactImg" src="{{ url_for('static',filename='css/contact.png') }}"></img>
+                </div>
+            </div>
         </div>
 
 
@@ -53,6 +89,25 @@
     <footer>
     </footer>
 
+    <script src="{{url_for('static', filename='css/main_js.js')}}"></script>
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          console.log(winScroll);
+          console.log(height);
+          var scrolled1 = (((winScroll)/ (height - 1000)) * 100);
+          document.getElementById("pause1").style.width = scrolled1 + "%";
+          var scrolled2 = (((winScroll - 800) / (height - 1000)) * 100);
+          document.getElementById("pause2").style.width = scrolled2 + "%";
+          var scrolled3 = (((winScroll - 100) / (height)) * 100);
+          document.getElementById("pause3").style.width = scrolled3 + "%";
+        }
+    </script>
 
 </body>    
 
